@@ -1,5 +1,5 @@
 Description='eduroam'
-Interface=wlan0
+Interface=INTERFACE_NAME
 Connection=wireless
 Security=wpa-configsection
 IP=dhcp
@@ -18,8 +18,8 @@ WPAConfigSection=(
     'identity="EDUROAM_IDENTIFIER"'
     'anonymous_identity="@cam.ac.uk"'
     'password="NETWORK_ACCESS_TOKEN"'
-    'ca_cert="/usr/share/ca-certificates/trust-source/mozilla.trust.crt"'
-    'subject_match="/C=GB/ST=England/L=Cambridge/O=University of Cambridge/OU=Computing Service/CN=network.tokens.csx.cam.ac.uk"'
+    'ca_cert="/etc/ssl/certs/QuoVadis_Root_CA_2.pem"'
+    'subject_match="/C=GB/ST=Cambridgeshire/L=CAMBRIDGE/O=University of Cambridge/OU=University Information Services/CN=network.tokens.csx.cam.ac.uk"'
     'phase1="peaplabel=0"'
     'phase2="auth=MSCHAPv2"'
 )
