@@ -16,10 +16,10 @@ WPAConfigSection=(
     'group=CCMP'
     'eap=PEAP'
     'identity="EDUROAM_IDENTIFIER"'
-    'anonymous_identity="@cam.ac.uk"'
+    'anonymous_identity="_public@cam.ac.uk"'
     'password="NETWORK_ACCESS_TOKEN"'
-    'ca_cert="/etc/ssl/certs/QuoVadis_Root_CA_2.pem"'
-    'subject_match="/C=GB/ST=Cambridgeshire/L=CAMBRIDGE/O=University of Cambridge/OU=University Information Services/CN=network.tokens.csx.cam.ac.uk"'
+    'ca_cert="/etc/ssl/certs/QuoVadis_Root_CA_2_G3.pem"'
+    'subject_match="/C=GB/ST=Cambridgeshire/L=CAMBRIDGE/O=University of Cambridge/OU=University Information Services/CN=token-public.wireless.cam.ac.uk"'
     'phase1="peaplabel=0"'
     'phase2="auth=MSCHAPV2"'
 )
