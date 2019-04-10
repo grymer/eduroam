@@ -1,0 +1,24 @@
+Description='eduroam'
+Interface=INTERFACE_NAME
+Connection=wireless
+Security=wpa-configsection
+IP=dhcp
+TimeoutWPA=10
+WPAConfigSection=(
+    'ssid="eduroam"'
+    'scan_ssid=0'
+    'priority=0'
+    'mode=0'
+    'proto=RSN'
+    'key_mgmt=WPA-EAP'
+    'auth_alg=OPEN'
+    'pairwise=CCMP'
+    'group=CCMP'
+    'eap=PEAP'
+    'identity="EDUROAM_IDENTIFIER"'
+    'anonymous_identity="_token@cam.ac.uk"'
+    'password="NETWORK_ACCESS_TOKEN"'
+    'ca_cert="hash://server/sha256/780e1e109b0fe6497495f4a71665219a80ada98fed220515dedaa5189c920d2c"'
+    'phase1="peaplabel=0"'
+    'phase2="auth=MSCHAPV2"'
+)
